@@ -58,9 +58,18 @@ Mengukur kinerja model dengan metrik utama:
 - Mengidentifikasi fitur mana yang paling berpengaruh terhadap prediksi kematian pasien gagal jantung.
 - Memberikan rekomendasi berdasarkan hasil evaluasi untuk penggunaan model dalam konteks medis.
 
-## Kesimpulan
+## Kesimpulan dan Rekomendasi
 
-Proyek ini menunjukkan pentingnya analisis fitur dan pemilihan model dalam prediksi kematian pasien gagal jantung. Random Forest dan Bagging memberikan hasil yang kompetitif, namun satu model mungkin lebih cocok tergantung pada konteks penggunaannya.
+### Kesimpulan
+
+- **Model dengan AUC tertinggi** (Random Forest, AUC = 0.912) menunjukkan bahwa model ini memiliki kemampuan terbaik dalam membedakan antara kelas positif dan negatif. AUC adalah metrik yang sangat penting karena memberikan gambaran komprehensif tentang kinerja model di berbagai threshold.
+- **Model dengan Akurasi tertinggi** (Bagging KNN, 88.89%) menunjukkan bahwa model ini memiliki persentase prediksi benar tertinggi dalam keseluruhan prediksi.
+
+### Rekomendasi
+
+- Jika kita lebih mengutamakan kemampuan model untuk membedakan antara kelas positif dan negatif, yang biasanya lebih penting dalam banyak aplikasi praktis, maka Random Forest adalah pilihan terbaik karena memiliki AUC tertinggi (0.912).
+- Jika kita lebih mengutamakan persentase prediksi yang benar secara keseluruhan, maka Bagging KNN adalah pilihan terbaik karena memiliki akurasi tertinggi (88.89%).
+
 
 ## Catatan
 
